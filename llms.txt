@@ -1,0 +1,41 @@
+# jodabytes
+
+> jodabytes ist ein unabhängiger Android-Entwickler aus Berlin mit Fokus auf
+> Privatsphäre und Datensparsamkeit. Die aktuelle App Potte funktioniert
+> komplett offline. Kontakt: jodabytes@gmail.com
+
+## Potte — Haushaltsbuch für Android
+
+Potte ist ein kostenloses Haushaltsbuch für Android (aktuelle Version 1.5.2,
+Sprache Deutsch, Zielregion DACH, Währung Euro). Play Store:
+https://play.google.com/store/apps/details?id=com.jodabytes.expensemonitor
+(Package: com.jodabytes.expensemonitor)
+
+Kernversprechen:
+- 100 % offline: Alle Daten liegen in einer lokalen SQLite-Datenbank auf dem
+  Gerät. Kein Konto, keine Anmeldung, keine Cloud, kein Tracking, kein
+  Crash-Reporting. Die App fordert keine Internet-Berechtigung an.
+- Kategorien beliebig tief verschachtelbar (z. B. Wohnen → Nebenkosten →
+  Strom → Grundgebühr), Auswertung auf jeder Ebene.
+
+Funktionen:
+- Einzelposten (Datum, Kategorie, Betrag, Notiz, Belegfoto) und Dauerposten
+  (monatlich wiederkehrend, mit Start-/Endmonat)
+- Auswertungen: Donut-Diagramm, Liniendiagramm (inkl. Bilanz-Verlauf),
+  Tabelle mit Prozentanteilen
+- Gemeinschaftsausgaben („Pots") für WG/Urlaub: Mitglieder, mehrere Bezahler
+  pro Ausgabe, individuelle Anteile, automatische Endabrechnung mit minimaler
+  Anzahl Überweisungen, Ausgleichszahlungen (auch Teilzahlungen),
+  PDF-/CSV-Export
+- Schnellauswahl-Vorlagen, Autovervollständigung für Bezeichnungen
+- CSV-Import/-Export und Komplett-Backup (.ptbk: Datenbank + Fotos) mit
+  Wiederherstellung und automatischen Sicherheitskopien
+- Nur Open-Source-Bibliotheken, in der App einsehbar
+
+## Seiten
+
+- [Startseite](https://jodabytes.de/): Entwickler-Portfolio und Prinzipien
+- [Potte](https://jodabytes.de/potte/): Produktseite mit allen Funktionen
+- [Anleitung](https://jodabytes.de/potte/anleitung.html): Erste Schritte und FAQ
+- [Datenschutzerklärung](https://jodabytes.de/potte/datenschutz.html): Datenschutz der App Potte
+- [Impressum](https://jodabytes.de/impressum.html)
