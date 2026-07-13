@@ -77,26 +77,24 @@ einreichen, wenn die Domain live ist.
    Repo-Wurzel — alternativ selbst anlegen und pushen.
    Sobald das Zertifikat ausgestellt ist: **Enforce HTTPS** aktivieren.
 4. Prüfen: `https://jodabytes.de/potte/datenschutz.html` lädt über HTTPS.
-5. Der alte Datenschutz-Link `https://joda-bln.github.io/ExpenseMonitor/`
-   bleibt von der Domain-Umstellung unberührt (anderer Account-Namespace).
-   Trotzdem zeitnah auf die neue URL umziehen:
-   - `_privacyUrl` in der App auf `https://jodabytes.de/potte/datenschutz.html`
-     ändern und ein App-Update veröffentlichen,
-   - dieselbe URL in der Play Console (App-Inhalte → Datenschutzerklärung)
-     eintragen,
-   - optional als Brücke: im alten Repo `ExpenseMonitor` eine Weiterleitungs-
-     Seite (`<meta http-equiv="refresh" content="0;url=https://jodabytes.de/potte/datenschutz.html">`)
-     hinterlegen, damit Alt-Installationen nicht ins Leere laufen.
+5. App-URLs (`_privacyUrl`, `_manualUrl` in
+   `lib/presentation/settings/settings_page.dart`) und die Play-Console-URL
+   bei Gelegenheit auf `https://jodabytes.de/…` umstellen. Eilt nicht:
+   GitHub Pages leitet `https://jodabytes.github.io/<pfad>` nach der
+   Domain-Aufschaltung automatisch pfaderhaltend auf die Domain um, die
+   bisherigen Links funktionieren also weiter.
 
-## Nach dem Deployment (App & Play Console)
+## Status App & Play Console
 
-- In der App `lib/presentation/settings/settings_page.dart` (Konstante
-  `_privacyUrl`) von `https://joda-bln.github.io/ExpenseMonitor/` auf
-  **`https://jodabytes.de/potte/datenschutz.html`** ändern.
-- Dieselbe URL in der Play Console unter
-  App-Inhalte → Datenschutzerklärung hinterlegen.
-- Optional in künftigen App-Versionen: Anleitung verlinken —
-  `https://jodabytes.de/potte/anleitung.html` (auch mit Ankern, s. u.).
+- Die App verlinkt seit dem Stand nach 1.5.2 auf
+  `https://jodabytes.github.io/potte/datenschutz.html` (`_privacyUrl`) und
+  `https://jodabytes.github.io/potte/anleitung.html` (`_manualUrl`).
+- Die Play Console (App-Inhalte → Datenschutzerklärung) muss auf
+  `https://jodabytes.github.io/potte/datenschutz.html` umgestellt werden,
+  sobald das App-Update eingereicht ist.
+- Die **alte** Datenschutz-URL `https://joda-bln.github.io/ExpenseMonitor/`
+  (Repo `joda-bln/ExpenseMonitor`) muss online bleiben, solange Versionen
+  ≤ 1.5.2 im Umlauf sind — erst danach kann das alte Repo weg.
 
 ## Stabile Anker in der Anleitung
 
@@ -108,18 +106,21 @@ dürfen nie umbenannt werden (neue dürfen dazukommen):
 `faq-geraetewechsel`, `faq-cloud-sync`, `faq-csv`, `faq-ios`,
 `faq-loeschen`, `faq-kontakt`
 
-Beispiel: `https://jodabytes.de/potte/anleitung.html#faq-geraetewechsel`
+Beispiel: `https://jodabytes.github.io/potte/anleitung.html#faq-geraetewechsel`
 
 ## Domain ändern
 
-Die absolute URL steht nur in Meta-/Crawler-Dateien; interne Links sind relativ.
-Bei Domainwechsel:
+Die absolute Basis-URL ist derzeit `https://jodabytes.github.io` und steht nur
+in Meta-/Crawler-Dateien; interne Links sind relativ. Bei Domainwechsel
+(z. B. auf `jodabytes.de`):
 
-1. In allen Dateien `https://jodabytes.de` durch die neue Domain ersetzen
-   (betrifft: canonical/OG/Twitter-Tags und JSON-LD in den HTML-Dateien,
-   `sitemap.xml`, `robots.txt`, `llms.txt`).
-2. `CNAME`-Datei anpassen.
-3. DNS-Records neu setzen (siehe oben), Pages-Einstellung aktualisieren.
+1. In allen Dateien `https://jodabytes.github.io` durch die neue Domain
+   ersetzen (betrifft: canonical/OG/Twitter-Tags und JSON-LD in den
+   HTML-Dateien, `sitemap.xml`, `robots.txt`, `llms.txt`).
+2. `CNAME`-Datei anlegen/anpassen.
+3. DNS-Records setzen (siehe Phase 2), Pages-Einstellung aktualisieren.
+4. In der Google Search Console die neue Domain als Property anlegen und die
+   Adressänderung melden (Einstellungen → Adressänderung).
 
 ## Neue App ergänzen
 

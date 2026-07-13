@@ -34,8 +34,8 @@ Funktionen:
 
 ## Seiten
 
-- [Startseite](https://jodabytes.de/): Entwickler-Portfolio und Prinzipien
-- [Potte](https://jodabytes.de/potte/): Produktseite mit allen Funktionen
-- [Anleitung](https://jodabytes.de/potte/anleitung.html): Erste Schritte und FAQ
-- [Datenschutzerklärung](https://jodabytes.de/potte/datenschutz.html): Datenschutz der App Potte
-- [Impressum](https://jodabytes.de/impressum.html)
+- [Startseite](https://jodabytes.github.io/): Entwickler-Portfolio und Prinzipien
+- [Potte](https://jodabytes.github.io/potte/): Produktseite mit allen Funktionen
+- [Anleitung](https://jodabytes.github.io/potte/anleitung.html): Erste Schritte und FAQ
+- [Datenschutzerklärung](https://jodabytes.github.io/potte/datenschutz.html): Datenschutz der App Potte
+- [Impressum](https://jodabytes.github.io/impressum.html)

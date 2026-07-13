@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jodabytes.de/sitemap.xml
+Sitemap: https://jodabytes.github.io/sitemap.xml
